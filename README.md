@@ -1,10 +1,16 @@
-Meetup.com Aggregator
-================================
+Meetup.com Aggregator POC
+=========================
 
+Features
+--------
 Illustrates rough POC for the following:
 * retrieval of events for a given list of groups from Meetup.com REST API
 * adding formatted dates to result set
 * use of Handlebars.js template engine to render HTML
+
+To run:
+-------
+Open index.html
 
 Background
 ----------
