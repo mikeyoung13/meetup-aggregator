@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meetup.com Aggregator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css?ver=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="assets/js/site.js?ver=1"></script>
+    <script src="assets/js/handlebars-1.0.0.beta.6.js"></script>
+
+    <script id="meetup-result-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each events}}
+            <li>
+                <p class='ui-li-desc'>{{this.formattedDate}}</p>
+                <ul>
+                    <li>
+                        <p class='ui-li-desc'>Name: {{this.name}}</p>
+                        <p class='ui-li-desc'>Group: {{this.group.name}}</p>
+                    </li>
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+
+</head>
+<body>
+Events:
+<div id="output">
+</div>
+
+</body>
+</html>
